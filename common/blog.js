@@ -73,7 +73,7 @@ export const blogs = [
   <li>-> Retarget interested customers</li>
 </ul>
 
-<p>Platforms like<strong><a href="https://www.facebook.com/business/ads" target="_blank" class="text-blue-600 underline">Meta Ads</a></strong>  and<strong>a href="https://ads.google.com/" target="_blank" class="text-blue-600 underline">Google Ads</a></strong> < allow extremely precise targeting. I create campaigns that focus on conversions — not just likes. Contact me to start your first ad campaign: <a href="/contact" class="text-blue-600 underline">Get in touch</a>.</p>
+<p>Platforms like<strong><a href="https://www.facebook.com/business/ads" target="_blank" class="text-blue-600 underline">Meta Ads</a></strong>  and<strong><a href="https://ads.google.com/" target="_blank" class="text-blue-600 underline">Google Ads</a></strong> < allow extremely precise targeting. I create campaigns that focus on conversions — not just likes. Contact me to start your first ad campaign: <a href="/contact" class="text-blue-600 underline">Get in touch</a>.</p>
 
 <!-- SECTION 5 -->
 <h2 style="font-size:1.6rem; margin-top:2rem; border-bottom:2px solid #ddd; padding-bottom:6px;">5. A Professional Website Builds Trust</h2>
