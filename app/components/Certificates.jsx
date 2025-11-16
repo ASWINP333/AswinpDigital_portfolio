@@ -23,6 +23,7 @@ const Certificates = () => {
       <div className="w-full md:w-[80%] mx-auto">
         <Swiper
           effect={"coverflow"}
+          color="transparent"
           grabCursor={true}
           centeredSlides={true}
           loop={true}

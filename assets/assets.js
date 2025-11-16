@@ -88,6 +88,12 @@ export const assets = {
 };
 
 export const workData = [
+     {
+    title: "Earthwings",
+    description: "Best landscaping company in kerala",
+    live: "https://earthwings.in/",
+    bgImage: "/work-5.png",
+  },
   {
     title: "Certi-Verifier",
     description: "https://github.com/ASWINP333/certi_verifier",

@@ -51,11 +51,8 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto mt-4 text-sm sm:text-base font-Ovo text-gray-700 dark:text-gray-300 leading-relaxed text-justify sm:text-center"
       >
-        I’m a Digital Marketer and Full Stack Web Developer (MERN Stack) from Malappuram, India,
-        with 1 year of experience in website design, digital marketing, and web application
-        development. I help businesses grow online by combining creative design, strategic
-        marketing, and modern web technologies to deliver impactful digital solutions.
-      </motion.p>
+        I’m a the best  Digital Marketing expert and Web Developer in Malappuram, Kerala, with 1 year of experience in creating responsive websites, high-converting landing pages, and data-driven digital marketing campaigns. I help businesses grow online through a perfect blend of creative design, strategic marketing, and modern web technologies. Whether you need website development, SEO, social media marketing, or a complete digital growth plan, I deliver reliable and impactful digital solutions.
+        </motion.p>
 
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">

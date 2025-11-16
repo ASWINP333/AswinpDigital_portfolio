@@ -59,7 +59,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#services">
+            <a className="font-Ovo" href="#certificates">
               Certificates
             </a>
           </li>
@@ -75,10 +75,11 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#contact">
-              Contact Me
+            <a className="font-Ovo" href="#work">
+              Blog
             </a>
           </li>
+          
         </ul>
 
         <div className="flex items-center gap-4">
