@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
+import Link from "next/link";
 
 const Navbar = ({isDarkMode,setIsDarkMode}) => {
   const [isScroll, setIsScroll] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
   return (
     <>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
-        <Image src={assets.header_bg_color} alt="" className="w-full" priority/>
+        <Image src={assets.header_bg_color} alt="Digital Marketing Expert in Malappuram | Web Developer main Logo" className="w-full" priority/>
       </div>
 
       <nav
@@ -44,9 +45,9 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             rounded-full px-12 py-3 ${isScroll?"":"bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"} `}
         >
           <li>
-            <a className="font-Ovo" href="#top">
+            <Link className="font-Ovo" href="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a className="font-Ovo" href="#about">
@@ -59,7 +60,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#services">
+            <a className="font-Ovo" href="#certificates">
               Certificates
             </a>
           </li>
@@ -70,15 +71,16 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#work">
+            <a className="font-Ovo" href="#testimonials">
               Testimonials
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#contact">
-              Contact Me
-            </a>
+            <Link className="font-Ovo" href="/blog">
+              Blog
+            </Link>
           </li>
+          
         </ul>
 
         <div className="flex items-center gap-4">

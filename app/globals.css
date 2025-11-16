@@ -5,3 +5,26 @@
 *{
   font-family: Outfit;
 }
+
+.certificates-swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.certificates-swiper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+}
+
+.certificates-swiper .swiper-slide-shadow-left,
+.certificates-swiper .swiper-slide-shadow-right {
+  display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #222 !important;
+}

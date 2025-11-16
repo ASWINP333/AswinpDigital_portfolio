@@ -6,12 +6,12 @@ const Footer = ({isDarkMode}) => {
   return (
     <div className='mt-20'>
         <div className='text-center'>
-            <Image src={isDarkMode? assets.logo_dark: assets.logo} alt=''
+            <Image src={isDarkMode? assets.logo_dark: assets.logo} alt='Digital Marketing Expert in Malappuram | Web Developer logo footer'
             className='w-36 mx-auto mb-2'/>
             <div className='w-max flex items-center gap-2 mx-auto'>
                 <Image src={isDarkMode? assets.mail_icon_dark:assets.mail_icon} alt=''
             className='w-6 '/>
-            aswinpp715@gmail.com
+            aswinpp910@gmail.com
             </div>
         </div>
 
@@ -19,9 +19,10 @@ const Footer = ({isDarkMode}) => {
         mx-[10%] mt-12 py-6'>
             <p>© 2025 Aswin P. All rights reserved</p>
             <ul  className='flex items-center gap-10 justify-center mt-4 sm:mt-0'>
+                <li><a target='#' href="https://www.instagram.com/aswinp.in?igsh=MWZobXhwdmpqOGpmOA==">Instagram</a></li>
                 <li><a target='#' href="https://github.com/ASWINP333/">GitHub</a></li>
-                <li><a target='#' href="https://www.linkedin.com/in/aswin-p-89280221b/">LinkedIn</a></li>
-                
+                <li><a target='#' href="http://www.linkedin.com/in/aswinpoonthottathil">LinkedIn</a></li>
+                <li><a target='#' href="https://www.facebook.com/share/19pLrpw9HF/?mibextid=wwXIfr">Facebook</a></li>
             </ul>
         </div>
     </div>

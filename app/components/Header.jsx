@@ -1,7 +1,7 @@
-import { assets } from '@/assets/assets'
-import Image from 'next/image'
-import React from 'react'
-import { motion } from "motion/react"
+import { assets } from "@/assets/assets";
+import Image from "next/image";
+import React from "react";
+import { motion } from "motion/react";
 
 const Header = () => {
   return (
@@ -13,15 +13,26 @@ const Header = () => {
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
-        transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
-        className="flex justify-center"
+        transition={{ duration: 0.5, type: "spring", stiffness: 100 }}
+        className="flex justify-center mt-4 lg:mt-16"
       >
         <Image
           src={assets.profile_img}
-          alt="Aswin P"
+          alt="Digital Marketing Expert in Malappuram | Web Developer - Aswin P"
           className="rounded-full w-28 sm:w-32 md:w-40 object-cover"
         />
       </motion.div>
+
+      {/* Main Heading */}
+      <motion.h1
+        initial={{ y: -30, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] leading-tight font-Ovo mt-2 mx-auto"
+      >
+        Digital Marketing Expert in Malappuram | Web Developer{" "}
+        <br className="hidden sm:block" /> (MERN Stack)
+      </motion.h1>
 
       {/* Greeting */}
       <motion.h3
@@ -31,30 +42,23 @@ const Header = () => {
         className="flex items-center justify-center gap-2 text-lg sm:text-2xl font-Ovo mt-3"
       >
         Hi! I'm <span className="font-semibold">Aswin P</span>
-        <Image src={assets.hand_icon} alt="wave" className="w-5 sm:w-6" />
       </motion.h3>
-
-      {/* Main Heading */}
-      <motion.h1
-        initial={{ y: -30, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.9, delay: 0.3 }}
-        className="text-3xl sm:text-4xl md:text-5xl lg:text-[58px] leading-tight font-Ovo mt-2 mx-auto"
-      >
-        Digital Marketer & Web Developer <br className="hidden sm:block" /> (MERN Stack)
-      </motion.h1>
 
       {/* Description */}
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.7 }}
-        className="max-w-2xl mx-auto mt-4 text-sm sm:text-base font-Ovo text-gray-700 dark:text-gray-300 leading-relaxed text-justify sm:text-center"
-      >
-        I’m a Digital Marketer and Full Stack Web Developer (MERN Stack) from Malappuram, India,
-        with 1 year of experience in website design, digital marketing, and web application
-        development. I help businesses grow online by combining creative design, strategic
-        marketing, and modern web technologies to deliver impactful digital solutions.
+        className="max-w-2xl mx-auto mt-4 text-sm sm:text-base font-Ovo text-gray-700 dark:text-gray-300 leading-relaxed text-justify"
+>
+        I’m a Digital Marketing Expert in Malappuram, Kerala, with 1 year of
+        experience in creating responsive websites, high-converting landing
+        pages, and data-driven digital marketing campaigns. I help businesses
+        grow online by combining creative design, strategic marketing, and
+        modern web technologies. As a web developer and marketer, I deliver
+        complete digital solutions — including website development, SEO, social
+        media marketing, paid advertising, and full digital growth strategies —
+        to help businesses build a strong and impactful online presence.{" "}
       </motion.p>
 
       {/* Buttons */}
@@ -85,7 +89,7 @@ const Header = () => {
         </motion.a>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

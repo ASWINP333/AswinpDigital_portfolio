@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import Services from "./components/Services";
 import Work from "./components/Work";
 import Certificates from "./components/Certificates";
+import Testimonials from "./components/Testimonials";
 
 
 export default function Home() {
@@ -43,6 +44,7 @@ useEffect(()=>{
       <Services isDarkMode={isDarkMode} />
       <Certificates isDarkMode={isDarkMode} />
       <Work isDarkMode={isDarkMode} />
+      <Testimonials isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
     </>
