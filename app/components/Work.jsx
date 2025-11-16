@@ -12,6 +12,15 @@ const Work = ({ isDarkMode }) => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
+      <motion.h1
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
+        className="text-center text-3xl sm:text-4xl md:text-5xl font-Ovo"
+      >
+        My Latest Works as a Digital Marketing Expert & MERN Web Developer
+      </motion.h1>
+
       <motion.h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -20,24 +29,18 @@ const Work = ({ isDarkMode }) => {
       >
         My Portfolio
       </motion.h4>
-
-      <motion.h2
-        initial={{ opacity: 0, y: -20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-3xl sm:text-4xl md:text-5xl font-Ovo"
-      >
-        My Latest Works
-      </motion.h2>
-
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-gray-700 dark:text-white/80"
       >
-        Welcome to my web development portfolio! Explore projects showcasing my expertise in modern front-end
-        and back-end development, UI/UX, and performance-optimized websites.
+        Welcome to my portfolio! As a <strong> Digital Marketing Expert in Malappuram </strong>and
+        <strong>Full Stack Web Developer (MERN)</strong>, I create modern, responsive, and
+        performance-optimized websites. Explore my projects showcasing expertise
+        in UI/UX design, front-end and back-end development, SEO, and digital
+        marketing solutions that help businesses build a strong and effective
+        online presence.
       </motion.p>
 
       {/* Responsive cards using flex-wrap so remaining items center on the next row */}
@@ -63,15 +66,32 @@ const Work = ({ isDarkMode }) => {
                 duration-500 group-hover:bottom-7 group-hover:opacity-100 dark:text-darkTheme dark:border-white dark:hover:bg-blue-200"
             >
               <div>
-                <h2 className="font-semibold text-black dark:text-darkTheme">{project.title}</h2>
+                <h2 className="font-semibold text-black dark:text-darkTheme">
+                  {project.title}
+                </h2>
                 <button className="mt-2 bg-darkHover text-cyan-50 px-4 py-1 rounded-full hover:bg-slate-900 transition">
-                  <a href={project.description} target="_blank" rel="noreferrer">git</a>
+                  <a
+                    href={project.description}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    git
+                  </a>
                 </button>
               </div>
 
               <div className="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-white transition">
-                <a href={project.live} target="_blank" rel="noreferrer" aria-label={`${project.title} live link`}>
-                  <Image src={assets.send_icon} alt="send icon" className="w-5" />
+                <a
+                  href={project.live}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={`${project.title} live link`}
+                >
+                  <Image
+                    src={assets.send_icon}
+                    alt="Digital Marketing Expert in Malappuram | Web Developer send icon"
+                    className="w-5"
+                  />
                 </a>
               </div>
             </div>
@@ -88,7 +108,9 @@ const Work = ({ isDarkMode }) => {
       >
         Show More
         <Image
-          src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold}
+          src={
+            isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold
+          }
           alt="Right arrow"
           className="w-4"
         />

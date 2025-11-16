@@ -48,7 +48,7 @@ const Certificates = () => {
                 <div className="relative w-full h-full transition-transform duration-300 hover:scale-105">
                   <Image
                     src={cert.img}
-                    alt={cert.title}
+                    alt={`Digital Marketing Expert in Malappuram | Web Developer ${cert.title} certificate`}
                     fill
                     sizes="(max-width: 768px) 100vw, 500px"
                     className="object-contain"

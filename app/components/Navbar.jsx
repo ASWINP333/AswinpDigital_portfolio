@@ -25,7 +25,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
   return (
     <>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
-        <Image src={assets.header_bg_color} alt="" className="w-full" priority/>
+        <Image src={assets.header_bg_color} alt="Digital Marketing Expert in Malappuram | Web Developer main Logo" className="w-full" priority/>
       </div>
 
       <nav
@@ -71,7 +71,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#work">
+            <a className="font-Ovo" href="#testimonials">
               Testimonials
             </a>
           </li>
