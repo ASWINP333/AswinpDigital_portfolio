@@ -14,7 +14,7 @@ const Header = () => {
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
         transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
-        className="flex justify-center"
+        className="flex justify-center mt-4 lg:mt-16"
       >
         <Image
           src={assets.profile_img}
@@ -23,16 +23,7 @@ const Header = () => {
         />
       </motion.div>
 
-      {/* Greeting */}
-      <motion.h3
-        initial={{ y: -2, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, delay: 0.3 }}
-        className="flex items-center justify-center gap-2 text-lg sm:text-2xl font-Ovo mt-3"
-      >
-        Hi! I'm <span className="font-semibold">Aswin P</span>
-        <Image src={assets.hand_icon} alt="wave" className="w-5 sm:w-6" />
-      </motion.h3>
+
 
       {/* Main Heading */}
       <motion.h1
@@ -43,6 +34,17 @@ const Header = () => {
       >
         Digital Marketer & Web Developer <br className="hidden sm:block" /> (MERN Stack)
       </motion.h1>
+
+            {/* Greeting */}
+      <motion.h3
+        initial={{ y: -2, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="flex items-center justify-center gap-2 text-lg sm:text-2xl font-Ovo mt-3"
+      >
+        Hi! I'm <span className="font-semibold">Aswin P</span>
+        <Image src={assets.hand_icon} alt="wave" className="w-5 sm:w-6" />
+      </motion.h3>
 
       {/* Description */}
       <motion.p

@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
+import Link from "next/link";
 
 const Navbar = ({isDarkMode,setIsDarkMode}) => {
   const [isScroll, setIsScroll] = useState(false);
@@ -44,9 +45,9 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             rounded-full px-12 py-3 ${isScroll?"":"bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"} `}
         >
           <li>
-            <a className="font-Ovo" href="#top">
+            <Link className="font-Ovo" href="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a className="font-Ovo" href="#about">
@@ -75,9 +76,9 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             </a>
           </li>
           <li>
-            <a className="font-Ovo" href="#work">
+            <Link className="font-Ovo" href="/blog">
               Blog
-            </a>
+            </Link>
           </li>
           
         </ul>

@@ -41,6 +41,10 @@ import metaAds from "./metaAds.png";
 import canva from "./canva.png";
 import hubspot from "./hubspot.png";
 import hubspot_certficate from "./hubspot-Academy-Certificate.jpg";
+import blog_1_img from "./blog1.png";
+import blog_2_img from "./blog2.png";
+import blog_3_img from "./blog3.png";
+import blog_4_img from "./blog4.png";
 export const assets = {
   user_image,
   code_icon,
@@ -85,6 +89,10 @@ export const assets = {
   canva,
   hubspot,
   hubspot_certficate,
+  blog_1_img,
+  blog_2_img,
+  blog_3_img,
+  blog_4_img,
 };
 
 export const workData = [
