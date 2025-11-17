@@ -48,53 +48,48 @@ const Page = ({ params }) => {
     );
   }
   return (
-     <>
-    <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
+    <>
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
-    <div className="min-h-screen w-full px-4 sm:px-6 lg:px-8 py-16">
-      <div className="max-w-4xl mx-auto">
+      <div className="min-h-screen w-full px-4 sm:px-6 lg:px-8 py-16">
+        <div className="max-w-4xl mx-auto">
+          {/* Blog Title */}
+          <h1 className="text-3xl sm:text-4xl font-bold mb-6 leading-tight mt-16">
+            {currentSelectedBlog.title}
+          </h1>
 
-        {/* Blog Title */}
-        <h1 className="text-3xl sm:text-4xl font-bold mb-6 leading-tight mt-16">
-          {currentSelectedBlog.title}
-        </h1>
-
-        {/* Meta data */}
-        <div className="flex items-center gap-3 text-gray-500 dark:text-gray-400 mb-8 text-sm">
-          <span>{currentSelectedBlog.date}</span>
-          <span>•</span>
-          <span>{currentSelectedBlog.author}</span>
-        </div>
-
-        {/* Featured Image */}
-        {currentSelectedBlog.image && (
-          <div className="w-full mb-10">
-            <Image
-              src={currentSelectedBlog.image}
-              alt={currentSelectedBlog.title}
-              className="rounded-xl shadow-md w-full object-cover"
-            />
+          {/* Meta data */}
+          <div className="flex items-center gap-3 text-gray-500 dark:text-gray-400 mb-8 text-sm">
+            <span>{currentSelectedBlog.date}</span>
+            <span>•</span>
+            <span>{currentSelectedBlog.author}</span>
           </div>
-        )}
 
-        {/* Blog Content */}
-        <article className="prose dark:prose-invert prose-lg max-w-none">
+          {/* Featured Image */}
+          {currentSelectedBlog.image && (
+            <div className="w-full mb-10">
+              <Image
+                src={currentSelectedBlog.image}
+                alt={currentSelectedBlog.title}
+                className="rounded-xl shadow-md w-full object-cover"
+              />
+            </div>
+          )}
 
-          {/* The actual blog HTML content */}
-          {/* <div
+          {/* Blog Content */}
+          <article className="prose dark:prose-invert prose-lg max-w-none">
+            {/* The actual blog HTML content */}
+            {/* <div
             dangerouslySetInnerHTML={{ __html: currentSelectedBlog.content }}
           ></div> */}
-          <BlogContent html={currentSelectedBlog.content} />
-
-
-        </article>
-
+            <BlogContent html={currentSelectedBlog.content} />
+          </article>
+        </div>
       </div>
-    </div>
 
-    <Footer isDarkMode={isDarkMode} />
-  </>
-  )
+      <Footer isDarkMode={isDarkMode} />
+    </>
+  );
 };
 
 export default Page;

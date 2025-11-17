@@ -2,8 +2,10 @@ import { assets } from "@/assets/assets";
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
+import { useRouter } from "next/navigation";
 
 const Contact = () => {
+    const router = useRouter();
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -30,6 +32,7 @@ const Contact = () => {
       if (data.success) {
         setResult("✅ Thanks — your message has been sent. I’ll contact you soon.");
         form.reset();
+        router.push("/thankyou");
       } else {
         console.error("Web3Forms error:", data);
         setResult("⚠️ Something went wrong. Please try again or email hello@theaswinp.in");

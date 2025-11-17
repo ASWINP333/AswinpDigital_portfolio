@@ -3,7 +3,7 @@ import Image from "next/image";
 import { assets } from "@/assets/assets";
 import Link from "next/link";
 
-const Navbar = ({isDarkMode,setIsDarkMode}) => {
+const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
   const openMenu = () => {
@@ -14,35 +14,47 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
   };
 
   useEffect(() => {
-  const handleScroll = () => {
-    setIsScroll(window.scrollY > 50);
-  };
+    const handleScroll = () => {
+      setIsScroll(window.scrollY > 50);
+    };
 
-  window.addEventListener("scroll", handleScroll);
-  return () => window.removeEventListener("scroll", handleScroll);
-}, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
       <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
-        <Image src={assets.header_bg_color} alt="Digital Marketing Expert in Malappuram | Web Developer main Logo" className="w-full" priority/>
+        <Image
+          src={assets.header_bg_color}
+          alt="Digital Marketing Expert in Malappuram | Web Developer main Logo"
+          className="w-full"
+          priority
+        />
       </div>
 
       <nav
         className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
-       flex items-center justify-between z-50 ${isScroll ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20" : ""
+       flex items-center justify-between z-50 ${
+         isScroll
+           ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20"
+           : ""
        }`}
       >
         <a href="#top">
           <Image
-            src={isDarkMode? assets.logo_dark: assets.logo}
+            src={isDarkMode ? assets.logo_dark : assets.logo}
             alt=""
             className="w-28 cursor-pointer mr-14"
           />
         </a>
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8
-            rounded-full px-12 py-3 ${isScroll?"":"bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"} `}
+            rounded-full px-12 py-3 ${
+              isScroll
+                ? ""
+                : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
+            } `}
         >
           <li>
             <Link className="font-Ovo" href="/">
@@ -64,7 +76,7 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
               Certificates
             </a>
           </li>
-          
+
           <li>
             <a className="font-Ovo" href="#work">
               Portfolio
@@ -80,12 +92,15 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
               Blog
             </Link>
           </li>
-          
         </ul>
 
         <div className="flex items-center gap-4">
-          <button onClick={()=>setIsDarkMode(prev => !prev)}>
-            <Image  src={isDarkMode ? assets.sun_icon : assets.moon_icon} alt="" className="w-6" />
+          <button onClick={() => setIsDarkMode((prev) => !prev)}>
+            <Image
+              src={isDarkMode ? assets.sun_icon : assets.moon_icon}
+              alt=""
+              className="w-6"
+            />
           </button>
 
           <a
@@ -94,11 +109,19 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
                 px-10 py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo dark:border-white/50"
           >
             Contact
-            <Image src={isDarkMode?assets.arrow_icon_dark : assets.arrow_icon} alt="" className="w-3" />
+            <Image
+              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
+              alt=""
+              className="w-3"
+            />
           </a>
 
           <button className="block md:hidden ml-3" onClick={openMenu}>
-            <Image src={isDarkMode? assets.menu_white:assets.menu_black} alt="" className="w-6" />
+            <Image
+              src={isDarkMode ? assets.menu_white : assets.menu_black}
+              alt=""
+              className="w-6"
+            />
           </button>
         </div>
 
@@ -111,15 +134,15 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
         >
           <div className="absolute right-6 top-6" onClick={closeMenu}>
             <Image
-              src={isDarkMode? assets.close_white: assets.close_black}
+              src={isDarkMode ? assets.close_white : assets.close_black}
               alt=""
               className="w-5 cursor-pointer"
             />
           </div>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#top">
+            <Link className="font-Ovo" onClick={closeMenu} href="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a className="font-Ovo" onClick={closeMenu} href="#about">
@@ -132,14 +155,24 @@ const Navbar = ({isDarkMode,setIsDarkMode}) => {
             </a>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#work">
-              My Work
+            <a className="font-Ovo" onClick={closeMenu} href="#certificates">
+              Certificates
             </a>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#contact">
-              Contact Me
+            <a className="font-Ovo" onClick={closeMenu} href="#work">
+              Portfolio
             </a>
+          </li>
+          <li>
+            <a className="font-Ovo" onClick={closeMenu} href="#testimonials">
+              Testimonials
+            </a>
+          </li>
+          <li>
+            <Link className="font-Ovo" onClick={closeMenu} href="/blog">
+              Blog
+            </Link>
           </li>
         </ul>
       </nav>
