@@ -112,35 +112,35 @@ export const assets = {
 export const workData = [
   {
     title: "Earthwings",
-    alt:"Digital Marketing Expert in Malappuram | Web Developer created earthwings website project which is best landscaping company in kerala",
+    alt: "Digital Marketing Expert in Malappuram | Web Developer created earthwings website project which is best landscaping company in kerala",
     description: "Best landscaping company in kerala",
     live: "https://earthwings.in/",
     bgImage: "/work-5.webp",
   },
   {
     title: "Certi-Verifier",
-    alt:"Digital Marketing Expert in Malappuram | Web Developer created certi-verifier website project which is certificate verification platform",
+    alt: "Digital Marketing Expert in Malappuram | Web Developer created certi-verifier website project which is certificate verification platform",
     description: "https://github.com/ASWINP333/certi_verifier",
     live: "https://certiverifier-main.netlify.app/",
     bgImage: "/work-1.webp",
   },
   {
     title: "Tomato-Food_del",
-    alt:"Digital Marketing Expert in Malappuram | Web Developer created tomato-food_del website project which is food delivery application",
+    alt: "Digital Marketing Expert in Malappuram | Web Developer created tomato-food_del website project which is food delivery application",
     description: "https://github.com/ASWINP333/food_delivery",
     live: "https://fooddeliveryclient.netlify.app/",
     bgImage: "/work-2.webp",
   },
   {
     title: "Recipe-Hub",
-    alt:"Digital Marketing Expert in Malappuram | Web Developer created recipe-hub website project which is recipe sharing platform",
+    alt: "Digital Marketing Expert in Malappuram | Web Developer created recipe-hub website project which is recipe sharing platform",
     description: "https://github.com/ASWINP333/Recipe_Hub_Assessment",
     live: "https://recipe-hub-tg.netlify.app/",
     bgImage: "/work-3.webp",
   },
   {
     title: "Kerala-Tourism",
-    alt:"Digital Marketing Expert in Malappuram | Web Developer created kerala-tourism website project which is tourism website for kerala",
+    alt: "Digital Marketing Expert in Malappuram | Web Developer created kerala-tourism website project which is tourism website for kerala",
     description: "https://github.com/ASWINP333/kerala-tourism",
     live: "https://kerala-tourism1-website.netlify.app/",
     bgImage: "/work-4.webp",
@@ -238,25 +238,35 @@ export const certificatesData = [
     title: "Content Marketing Certificate",
     certificateIssuer: "Hubspot Academy",
     img: assets.hubspot_certficate,
+    certificateLink:
+      "https://academy.hubspot.com/certification/content-marketing",
   },
   {
     title: "Content Marketing Certificate",
     certificateIssuer: "Hubspot Academy",
     img: assets.hubspot_certficate,
+    certificateLink:
+      "https://academy.hubspot.com/certification/content-marketing",
   },
   {
     title: "Content Marketing Certificate",
     certificateIssuer: "Hubspot Academy",
     img: assets.hubspot_certficate,
+    certificateLink:
+      "https://academy.hubspot.com/certification/content-marketing",
   },
   {
     title: "Content Marketing Certificate",
     certificateIssuer: "Hubspot Academy",
     img: assets.hubspot_certficate,
+    certificateLink:
+      "https://academy.hubspot.com/certification/content-marketing",
   },
   {
     title: "Content Marketing Certificate",
     certificateIssuer: "Hubspot Academy",
     img: assets.hubspot_certficate,
+    certificateLink:
+      "https://academy.hubspot.com/certification/content-marketing",
   },
 ];

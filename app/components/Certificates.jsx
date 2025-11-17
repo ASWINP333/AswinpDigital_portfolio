@@ -44,6 +44,7 @@ const Certificates = () => {
               key={index}
               className="rounded-xl overflow-hidden shadow-xl w-[350px] md:w-[500px] h-[300px]"
             >
+              <a href={cert.certificateLink} target="_blank" rel="noopener noreferrer">
               <div className="relative w-full h-full">
                 <div className="relative w-full h-full transition-transform duration-300 hover:scale-105">
                   <Image
@@ -60,6 +61,7 @@ const Certificates = () => {
                   <p className="text-sm">{cert.certificateIssuer}</p>
                 </div>
               </div>
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>
