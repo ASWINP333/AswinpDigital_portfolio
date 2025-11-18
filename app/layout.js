@@ -1,6 +1,7 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 import StructuredData from "./components/StructuredData";
+import ogimage from "../assets/DigitalMarketingExpertInMalappuram-Aswinp.webp";
 
 const OutfitFont = Outfit({
   subsets: ["latin"],
@@ -10,6 +11,7 @@ const OvoFont = Ovo({
   subsets: ["latin"],
   weight: ["400"],
 });
+
 
 export const metadata = {
   metadataBase: new URL("https://theaswinp.in"),
@@ -25,24 +27,33 @@ export const metadata = {
   keywords: [
     "digital marketing expert in malappuram",
     "web developer malappuram",
-    "seo specialist malappuram",
-    "digital marketing malappuram",
-    "aswin p",
+    "seo expert malappuram",
+    "social media marketing malappuram",
+    "ppc services malappuram",
+    "performance marketing malappuram",
+    "digital marketing services kerala",
+    "aswin p digital marketing",
+    "meta ads expert malappuram",
+    "google ads expert malappuram",
+    "content marketing malappuram",
+    "email marketing malappuram",
+    "online marketing malappuram",
+    "digital marketing consultant malappuram",
   ],
 
   openGraph: {
     title: "Digital Marketing Expert in Malappuram — Aswin P",
     description:
-      "Digital marketing expert in Malappuram offering SEO, social media, PPC and web development services.",
+      "Digital marketing expert in Malappuram offering SEO, social media, PPC, performance marketing and web development services.",
     url: "https://theaswinp.in",
     siteName: "Aswin P - Digital Marketing",
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "https://theaswinp.in/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Digital Marketing Expert in Malappuram",
+        alt: "Digital Marketing Expert in Malappuram — Aswin P",
       },
     ],
   },
@@ -51,8 +62,8 @@ export const metadata = {
     card: "summary_large_image",
     title: "Digital Marketing Expert in Malappuram — Aswin P",
     description:
-      "SEO, social media marketing, PPC and web development in Malappuram.",
-    images: ["/og-image.jpg"],
+      "SEO, social media marketing, PPC, performance marketing and web development in Malappuram.",
+    images: ["https://theaswinp.in/og-image.webp"],
   },
 
   alternates: {
@@ -60,17 +71,3 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en" className="scroll-smooth ">
-      <body
-        className={`${OutfitFont.className} ${OvoFont.className} antialiased leading-8
-        overflow-x-hidden dark:bg-darkTheme
-        dark:text-white`}
-      >
-        <StructuredData />
-        {children}
-      </body>
-    </html>
-  );
-}

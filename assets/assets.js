@@ -52,6 +52,7 @@ import emailicon from "./emailicon.webp";
 import suhail from "./suhailkm.webp";
 import aslam from "./aslam.webp";
 import rajitha from "./rajitha.webp";
+import ogimage from "./DigitalMarketingExpertInMalappuram-Aswinp.webp"
 export const assets = {
   user_image,
   code_icon,
@@ -107,6 +108,7 @@ export const assets = {
   suhail,
   aslam,
   rajitha,
+  ogimage
 };
 
 export const workData = [
