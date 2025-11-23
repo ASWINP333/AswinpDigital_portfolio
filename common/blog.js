@@ -1,5 +1,3 @@
-import { assets } from "@/assets/assets";
-
 export const blogs = [
   {
     slug: "why-every-small-business-in-malappuram-needs-a-digital-marketing-expert",
@@ -7,7 +5,7 @@ export const blogs = [
       "Why Every Small Business in Malappuram Needs a Digital Marketing Expert",
     date: "November 16, 2025",
     author: "Aswin P",
-    image: assets.blog_1_img,
+    image: '/blog1.webp',
     content: `
  <p>Digital marketing is no longer optional for small businesses in Malappuram. With customers searching online before visiting, your digital presence decides whether people find you — or choose your competitors. In a market where attention is everything, businesses that embrace the digital world grow faster, get more leads, and build stronger customer relationships.</p>
 
@@ -119,7 +117,7 @@ export const blogs = [
     title: "How a Website Can Transform Your Business in Malappuram",
     date: "November 16, 2025",
     author: "Aswin P",
-    image: assets.blog_2_img,
+    image: '/blog2.webp',
     content: `
   <p>In today’s digital-first world, having a website is no longer a luxury — it’s a necessity. For small businesses in Malappuram, a website acts as your online identity, a tool that builds trust, attracts customers, and improves your visibility. Without a website, your business misses out on customers who search online long before visiting any shop.</p>
 
@@ -244,7 +242,7 @@ export const blogs = [
     title: "Top Digital Marketing Trends in 2025 for Businesses in Malappuram",
     date: "November 16, 2025",
     author: "Aswin P",
-    image: assets.blog_3_img,
+    image: '/blog3.webp',
     content: `
  <p>Digital marketing is evolving fast, and businesses in Malappuram need to adapt to stay competitive. Whether you're running a local shop, a service business, or an online brand, understanding the latest digital trends can help you reach more customers and grow quickly.</p>
 
@@ -381,7 +379,7 @@ export const blogs = [
     title: "Why Hiring a Local Digital Marketing Expert in Malappuram Is Better Than an Agency",
     date: "November 16, 2025",
     author: "Aswin P",
-    image: assets.blog_4_img,
+    image: '/blog4.webp',
     content: `
   <p>Digital marketing is no longer optional for small businesses in Malappuram. With customers searching online before visiting, your digital presence decides whether people find you — or choose your competitors.</p>
 
