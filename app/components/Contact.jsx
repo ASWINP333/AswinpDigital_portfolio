@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 import { useRouter } from "next/navigation";
 
 const Contact = () => {
-    const router = useRouter();
+  const router = useRouter();
   const [result, setResult] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -30,16 +30,22 @@ const Contact = () => {
       const data = await response.json();
 
       if (data.success) {
-        setResult("✅ Thanks — your message has been sent. I’ll contact you soon.");
+        setResult(
+          "✅ Thanks — your message has been sent. I’ll contact you soon."
+        );
         form.reset();
         router.push("/thankyou");
       } else {
         console.error("Web3Forms error:", data);
-        setResult("⚠️ Something went wrong. Please try again or email hello@theaswinp.in");
+        setResult(
+          "⚠️ Something went wrong. Please try again or email aswinp910@gmail.com directly."
+        );
       }
     } catch (err) {
       console.error(err);
-      setResult("⚠️ Network error. Please check your connection and try again.");
+      setResult(
+        "⚠️ Network error. Please check your connection and try again."
+      );
     } finally {
       setLoading(false);
       // Optionally clear message after some time
@@ -79,9 +85,10 @@ const Contact = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-2xl mx-auto mt-5 mb-8 font-Ovo text-gray-700 dark:text-gray-300"
       >
-        I’d love to hear from you! Whether you have a question, a project idea, or want to
-        discuss your business goals, feel free to reach out anytime. Let’s work together
-        to build your online presence and create meaningful results.
+        I’d love to hear from you! Whether you have a question, a project idea,
+        or want to discuss your business goals, feel free to reach out anytime.
+        Let’s work together to build your online presence and create meaningful
+        results.
       </motion.p>
 
       <motion.form
@@ -93,10 +100,22 @@ const Contact = () => {
         aria-labelledby="contact-heading"
       >
         {/* Hidden fields for Web3Forms */}
-        <input type="hidden" name="access_key" value={process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || ""} />
-        <input type="hidden" name="subject" value="New Business Inquiry from TheAswinP.in" />
+        <input
+          type="hidden"
+          name="access_key"
+          value={process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || ""}
+        />
+        <input
+          type="hidden"
+          name="subject"
+          value="New Business Inquiry from TheAswinP.in"
+        />
         <input type="hidden" name="email_template" value="table" />
-        <input type="hidden" name="from_name" value="TheAswinP Portfolio Contact Form" />
+        <input
+          type="hidden"
+          name="from_name"
+          value="TheAswinP Portfolio Contact Form"
+        />
         {/* Optional redirect after success */}
         {/* <input type="hidden" name="redirect" value="https://theaswinp.in/thank-you" /> */}
 
@@ -143,7 +162,11 @@ const Contact = () => {
           transition={{ duration: 0.3 }}
           type="submit"
           className={`py-3 px-8 w-max flex items-center gap-2 rounded-full mx-auto 
-            ${loading ? "bg-gray-400 text-white cursor-not-allowed" : "bg-black/80 text-white hover:bg-black"} 
+            ${
+              loading
+                ? "bg-gray-400 text-white cursor-not-allowed"
+                : "bg-black/80 text-white hover:bg-black"
+            } 
             duration-500 dark:bg-transparent dark:border-[0.5px] dark:hover:bg-darkHover`}
           disabled={loading}
           aria-busy={loading}
