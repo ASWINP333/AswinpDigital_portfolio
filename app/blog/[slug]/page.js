@@ -37,7 +37,6 @@ const Page = ({ params }) => {
   if (!currentSelectedBlog) {
     return (
       <>
-        <BlogSchema />
         <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <div className="min-h-[100vh] flex flex-col items-center justify-center px-4 py-8 w-full">
           <h1 className="text-4xl font-bold mb-8 mt-12">Blog Not Found</h1>
@@ -51,6 +50,7 @@ const Page = ({ params }) => {
   }
   return (
     <>
+      <BlogSchema blog={currentSelectedBlog} />
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
 
       <div className="min-h-screen w-full px-4 sm:px-6 lg:px-8 py-16">
