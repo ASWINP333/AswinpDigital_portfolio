@@ -72,6 +72,8 @@ const Page = ({ params }) => {
                 src={currentSelectedBlog.image}
                 alt={currentSelectedBlog.title}
                 className="rounded-xl shadow-md w-full object-cover"
+                width={800}
+                height={400}
               />
             </div>
           )}

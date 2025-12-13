@@ -77,6 +77,7 @@ const Services = () => {
                 }
               }}
               className="flex items-center gap-2 text-sm mt-5 cursor-pointer"
+              href='#'
             >
               Read More
               <Image src={assets.right_arrow} alt="" className="w-4" />
