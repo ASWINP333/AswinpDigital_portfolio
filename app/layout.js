@@ -3,6 +3,7 @@ import "./globals.css";
 import PersonSchema from "./components/schema/PersonSchema";
 import OrganizationSchema from "./components/schema/OrganizationSchema";
 import WebSiteSchema from "./components/schema/WebSiteSchema";
+import Script from "next/script";
 
 const OutfitFont = Outfit({
   subsets: ["latin"],
