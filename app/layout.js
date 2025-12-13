@@ -79,6 +79,19 @@ export default function RootLayout({ children }) {
         overflow-x-hidden dark:bg-darkTheme
         dark:text-white`}
       >
+        {/* Google Analytics */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=G-E79MD6GK22`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-E79MD6GK22');
+          `}
+        </Script>
         <PersonSchema />
         <OrganizationSchema />
         <WebSiteSchema />
