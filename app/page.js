@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useEffect, useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -11,46 +11,49 @@ import Certificates from "./components/Certificates";
 import Testimonials from "./components/Testimonials";
 import FAQ from "./components/FAQ";
 import WhatsAppButton from "./components/WhatsAppButton";
-
+import HomeServicesSchema from "./components/schema/HomeServicesSchema";
+import FAQSchema from "./components/schema/FAQSchema";
 
 export default function Home() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
-const [isDarkMode,setIsDarkMode]= useState(true);
+  useEffect(() => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme:dark)").matches)
+    ) {
+      setIsDarkMode(true);
+    } else {
+      setIsDarkMode(false);
+    }
+  }, []);
 
-useEffect(()=>{
-  if (localStorage.theme === 'dark' || (!('theme' in localStorage) && 
-  window.matchMedia('(prefers-color-scheme:dark)').matches)) {
-    setIsDarkMode(true)
-  }
-  else{
-    setIsDarkMode(false)
-  }
-},[])
-
-useEffect(()=>{
-  if(isDarkMode){
-    document.documentElement.classList.add('dark');
-    localStorage.theme = 'dark';
-  }
-  else{
-    document.documentElement.classList.remove('dark');
-    localStorage.theme = '';
-  }
-},[isDarkMode])
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.classList.add("dark");
+      localStorage.theme = "dark";
+    } else {
+      document.documentElement.classList.remove("dark");
+      localStorage.theme = "";
+    }
+  }, [isDarkMode]);
 
   return (
     <>
-      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode}/>
+      <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       <Header isDarkMode={isDarkMode} />
       <About isDarkMode={isDarkMode} />
       <Services isDarkMode={isDarkMode} />
+      <HomeServicesSchema />
       <Certificates isDarkMode={isDarkMode} />
       <Work isDarkMode={isDarkMode} />
       <Testimonials isDarkMode={isDarkMode} />
       <FAQ isDarkMode={isDarkMode} />
+      <FAQSchema />
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
-      <WhatsAppButton/>
+      <WhatsAppButton />
     </>
   );
 }

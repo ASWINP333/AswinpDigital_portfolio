@@ -2,6 +2,7 @@
 import BlogContent from "@/app/components/BlogContent";
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/Navbar";
+import BlogSchema from "@/app/components/schema/BlogSchema";
 import { blogs } from "@/common";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -36,6 +37,7 @@ const Page = ({ params }) => {
   if (!currentSelectedBlog) {
     return (
       <>
+        <BlogSchema />
         <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
         <div className="min-h-[100vh] flex flex-col items-center justify-center px-4 py-8 w-full">
           <h1 className="text-4xl font-bold mb-8 mt-12">Blog Not Found</h1>

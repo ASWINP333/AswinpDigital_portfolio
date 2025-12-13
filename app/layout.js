@@ -1,7 +1,8 @@
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
-import StructuredData from "./components/StructuredData";
-import ogimage from "../assets/DigitalMarketingExpertInMalappuram-Aswinp.webp";
+import PersonSchema from "./components/schema/PersonSchema";
+import OrganizationSchema from "./components/schema/OrganizationSchema";
+import WebSiteSchema from "./components/schema/WebSiteSchema";
 
 const OutfitFont = Outfit({
   subsets: ["latin"],
@@ -11,7 +12,6 @@ const OvoFont = Ovo({
   subsets: ["latin"],
   weight: ["400"],
 });
-
 
 export const metadata = {
   metadataBase: new URL("https://theaswinp.in"),
@@ -79,7 +79,9 @@ export default function RootLayout({ children }) {
         overflow-x-hidden dark:bg-darkTheme
         dark:text-white`}
       >
-        <StructuredData />
+        <PersonSchema />
+        <OrganizationSchema />
+        <WebSiteSchema />
         {children}
       </body>
     </html>

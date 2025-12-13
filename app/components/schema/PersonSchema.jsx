@@ -1,8 +1,8 @@
 import Script from "next/script";
 
-export default function StructuredData() {
+export default function PersonSchema() {
   const data = {
-    "@context": "https://schema.org/",
+    "@context": "https://schema.org",
     "@type": "Person",
     "@id": "https://theaswinp.in/#person",
     name: "Aswin P",
@@ -10,7 +10,9 @@ export default function StructuredData() {
     image: "https://theaswinp.in/logo_dark.webp",
     description:
       "Digital marketing expert in Malappuram specializing in SEO, PPC, social media marketing and web development.",
-      knowsAbout: [
+    jobTitle: "Digital Marketing Expert in Malappuram",
+
+    knowsAbout: [
       "Search Engine Optimization",
       "Google Ads",
       "Meta Ads",
@@ -18,37 +20,28 @@ export default function StructuredData() {
       "Web Development",
       "Performance Marketing",
     ],
+
     sameAs: [
       "https://www.facebook.com/share/19pLrpw9HF/?mibextid=wwXIfr",
       "https://www.instagram.com/aswinp.in?igsh=MWZobXhwdmpqOGpmOA==",
       "http://www.linkedin.com/in/aswinpoonthottathil",
       "https://github.com/ASWINP333/",
     ],
-    jobTitle: "Digital Marketing Expert in Malappuram",
-    hasOccupation: {
-      "@type": "Occupation",
-      name: "Digital Marketer",
-      description:
-        "Provides SEO, PPC, SMM, branding and website development services.",
-      skills: ["SEO", "PPC", "Social Media Marketing", "Web Development"],
-    },
+
     worksFor: {
       "@type": "Organization",
-      name: "Aswin P Digital Marketing Services",
-      url: "https://theaswinp.in",
+      "@id": "https://theaswinp.in/#organization",
     },
+
     address: {
       "@type": "PostalAddress",
       addressLocality: "Malappuram",
       addressRegion: "Kerala",
       addressCountry: "IN",
     },
-    contactPoint: {
-      "@type": "ContactPoint",
-      contactType: "customer support",
-      email: "aswinp916@gmail.com",
-    },
+
     areaServed: "Malappuram, Kerala, India",
+
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": "https://theaswinp.in",
@@ -57,7 +50,7 @@ export default function StructuredData() {
 
   return (
     <Script
-      id="structured-data"
+      id="person-schema"
       type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />
