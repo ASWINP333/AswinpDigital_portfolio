@@ -5,10 +5,11 @@ import Navbar from "@/app/components/Navbar";
 import BlogSchema from "@/app/components/schema/BlogSchema";
 import { blogs } from "@/common";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 
 const Page = ({ params }) => {
-  const currentSelectedBlog = blogs.find((blog) => blog.slug === params.slug);
+  const { slug } = use(params);
+  const currentSelectedBlog = blogs.find((blog) => blog.slug === slug);
 
   const [isDarkMode, setIsDarkMode] = useState(true);
 
@@ -33,6 +34,7 @@ const Page = ({ params }) => {
       localStorage.theme = "";
     }
   }, [isDarkMode]);
+  console.log(currentSelectedBlog);
 
   if (!currentSelectedBlog) {
     return (
