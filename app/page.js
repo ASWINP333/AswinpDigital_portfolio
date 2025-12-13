@@ -9,6 +9,8 @@ import Services from "./components/Services";
 import Work from "./components/Work";
 import Certificates from "./components/Certificates";
 import Testimonials from "./components/Testimonials";
+import FAQ from "./components/FAQ";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 
 export default function Home() {
@@ -45,8 +47,10 @@ useEffect(()=>{
       <Certificates isDarkMode={isDarkMode} />
       <Work isDarkMode={isDarkMode} />
       <Testimonials isDarkMode={isDarkMode} />
+      <FAQ isDarkMode={isDarkMode} />
       <Contact isDarkMode={isDarkMode} />
       <Footer isDarkMode={isDarkMode} />
+      <WhatsAppButton/>
     </>
   );
 }
