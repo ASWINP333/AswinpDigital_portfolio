@@ -31,4 +31,12 @@ export const faqs = [
     q: "How do I get started with a Digital Marketing Expert in Malappuram?",
     a: `Start with a free consultation — we’ll audit your website, Google Business Profile and social presence, then propose a simple 90-day plan focused on quick wins (local SEO, one high-converting landing page, and a small ad test). Contact me via the contact form or email to begin.`,
   },
+  {
+    q:"How long does SEO take for local businesses in Malappuram?",
+    a:"SEO results for local businesses in Malappuram usually start appearing within 4 to 8 weeks, depending on competition and website quality. As a digital marketing expert in Malappuram, I focus on local SEO strategies that improve Google rankings, visibility, and lead generation in a sustainable way."
+  },
+  {
+    q:"Do you offer digital marketing services for small businesses?",
+    a:"Yes, I provide affordable digital marketing services for small businesses in Malappuram, including SEO, social media marketing, Google Ads, and website optimization. These strategies are designed to help local businesses attract more customers and grow online without overspending."
+  }
 ];
