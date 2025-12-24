@@ -15,6 +15,7 @@ const WhatsAppButton = () => {
         href="https://wa.me/916360395323?text=Hi%20Aswin,%20I%20need%20more%20details%20about%20your%20digital%20marketing%20services."
         target="_blank"
         data-gtm="whatsapp-click"
+        id="whatsapp-click"
         className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg flex items-center justify-center transition duration-300"
       >
         <FaWhatsapp size={28} />
