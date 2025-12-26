@@ -255,25 +255,19 @@ export const certificatesData = [
     certificateLink:
       "https://static.semrush.com/academy/certificates/810888c44a/aswin-p_25.pdf",
   },
+  
+  {
+    title: "Content Marketing Certificate",
+    certificateIssuer: "Hubspot Academy",
+    img: assets.hubspot_certficate,
+    certificateLink:
+      "https://academy.hubspot.com/certification/content-marketing",
+  },
   {
     title: "Google Analytics Certificate",
     certificateIssuer: "Google ",
     img:assets.googleAnalyticsCert,
     certificateLink:
       "https://www.credential.net/90bf271b-db21-41d2-baf6-8974dba32116#acc.TvgHUIka",
-  },
-  {
-    title: "Content Marketing Certificate",
-    certificateIssuer: "Hubspot Academy",
-    img: assets.hubspot_certficate,
-    certificateLink:
-      "https://academy.hubspot.com/certification/content-marketing",
-  },
-  {
-    title: "Content Marketing Certificate",
-    certificateIssuer: "Hubspot Academy",
-    img: assets.hubspot_certficate,
-    certificateLink:
-      "https://academy.hubspot.com/certification/content-marketing",
   },
 ];
