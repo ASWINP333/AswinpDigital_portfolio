@@ -53,7 +53,11 @@ import suhail from "./suhailkm.webp";
 import aslam from "./aslam.webp";
 import rajitha from "./rajitha.webp";
 import ogimage from "./DigitalMarketingExpertInMalappuram-Aswinp.webp"
+import seoEssential from "./SEO Essentials with Semrush.webp"
+import googleAnalyticsCert from "./googleAnalytics1.webp"
+
 export const assets = {
+  seoEssential,
   user_image,
   code_icon,
   code_icon_dark,
@@ -108,7 +112,8 @@ export const assets = {
   suhail,
   aslam,
   rajitha,
-  ogimage
+  ogimage,
+  googleAnalyticsCert
 };
 
 export const workData = [
@@ -244,18 +249,18 @@ export const certificatesData = [
       "https://academy.hubspot.com/certification/content-marketing",
   },
   {
-    title: "Content Marketing Certificate",
-    certificateIssuer: "Hubspot Academy",
-    img: assets.hubspot_certficate,
+    title: "SEO-Essentials with semrush",
+    certificateIssuer: "Semrush Academy",
+    img: assets.seoEssential,
     certificateLink:
-      "https://academy.hubspot.com/certification/content-marketing",
+      "https://static.semrush.com/academy/certificates/810888c44a/aswin-p_25.pdf",
   },
   {
-    title: "Content Marketing Certificate",
-    certificateIssuer: "Hubspot Academy",
-    img: assets.hubspot_certficate,
+    title: "Google Analytics Certificate",
+    certificateIssuer: "Google ",
+    img:assets.googleAnalyticsCert,
     certificateLink:
-      "https://academy.hubspot.com/certification/content-marketing",
+      "https://www.credential.net/90bf271b-db21-41d2-baf6-8974dba32116#acc.TvgHUIka",
   },
   {
     title: "Content Marketing Certificate",
