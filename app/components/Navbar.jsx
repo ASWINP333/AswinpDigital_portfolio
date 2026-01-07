@@ -2,10 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
+  const pathname = usePathname();
   const openMenu = () => {
     sideMenuRef.current.style.transform = "translateX(-16em)";
   };
@@ -62,30 +64,59 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             </Link>
           </li>
           <li>
-            <a className="font-Ovo" href="#about">
-              About Me
-            </a>
+            {pathname === "/" ? (
+              <a className="font-Ovo" href="#about">
+                About Me
+              </a>
+            ) : (
+              <Link className="font-Ovo" href="/">
+                About Me
+              </Link>
+            )}
           </li>
           <li>
-            <a className="font-Ovo" href="#services">
-              Services
-            </a>
+            {pathname === "/" ? (
+              <a className="font-Ovo" href="#services">
+                Services
+              </a>
+            ) : (
+              <Link className="font-Ovo" href="/">
+                Services
+              </Link>
+            )}
           </li>
           <li>
-            <a className="font-Ovo" href="#certificates">
-              Certificates
-            </a>
+            {pathname === "/" ? (
+              <a className="font-Ovo" href="#certificates">
+                Certificates
+              </a>
+            ) : (
+              <Link className="font-Ovo" href="/">
+                Certificates
+              </Link>
+            )}
           </li>
-
           <li>
-            <a className="font-Ovo" href="#work">
-              Portfolio
-            </a>
+            {pathname === "/" ? (
+              <a className="font-Ovo" href="#work">
+                Portfolio
+              </a>
+            ) : (
+              <Link className="font-Ovo" href="/">
+                Portfolio
+              </Link>
+            )}
           </li>
           <li>
-            <a className="font-Ovo" href="#testimonials">
-              Testimonials
-            </a>
+            {pathname === "/" ? (
+              <a className="font-Ovo" href="#testimonials">
+                Testimonials
+              </a>
+            ) : (
+              <Link className="font-Ovo" href="/">
+                Testimonials
+              </Link>
+            )}
           </li>
           <li>
             <Link className="font-Ovo" href="/blog">
@@ -145,29 +176,59 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             </Link>
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#about">
-              About Me
-            </a>
+            {pathname === "/" ? (
+              <a className="font-Ovo" onClick={closeMenu} href="#about">
+                About Me
+              </a>
+            ) : (
+              <Link className="font-Ovo" onClick={closeMenu} href="/">
+                About Me
+              </Link>
+            )}
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#services">
-              Services
-            </a>
+            {pathname === "/" ? (
+              <a className="font-Ovo" onClick={closeMenu} href="#services">
+                Services
+              </a>
+            ) : (
+              <Link className="font-Ovo" onClick={closeMenu} href="/">
+                Services
+              </Link>
+            )}
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#certificates">
-              Certificates
-            </a>
+            {pathname === "/" ? (
+              <a className="font-Ovo" onClick={closeMenu} href="#certificates">
+                Certificates
+              </a>
+            ) : (
+              <Link className="font-Ovo" onClick={closeMenu} href="/">
+                Certificates
+              </Link>
+            )}
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#work">
-              Portfolio
-            </a>
+            {pathname === "/" ? (
+              <a className="font-Ovo" onClick={closeMenu} href="#work">
+                Portfolio
+              </a>
+            ) : (
+              <Link className="font-Ovo" onClick={closeMenu} href="/">
+                Portfolio
+              </Link>
+            )}
           </li>
           <li>
-            <a className="font-Ovo" onClick={closeMenu} href="#testimonials">
-              Testimonials
-            </a>
+            {pathname === "/" ? (
+              <a className="font-Ovo" onClick={closeMenu} href="#testimonials">
+                Testimonials
+              </a>
+            ) : (
+              <Link className="font-Ovo" onClick={closeMenu} href="/">
+                Testimonials
+              </Link>
+            )}
           </li>
           <li>
             <Link className="font-Ovo" onClick={closeMenu} href="/blog">
