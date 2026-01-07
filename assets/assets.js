@@ -44,6 +44,7 @@ import blog_1_img from "./blog1.webp";
 import blog_2_img from "./blog2.webp";
 import blog_3_img from "./blog3.webp";
 import blog_4_img from "./blog4.webp";
+import blog_5_img from "./blog5.webp";
 import seoicon from "./seoicon.webp";
 import uiuxicon from "./uiuxicon.webp";
 import semicon from "./semicon.webp";
@@ -104,6 +105,7 @@ export const assets = {
   blog_2_img,
   blog_3_img,
   blog_4_img,
+  blog_5_img,
   seoicon,
   uiuxicon,
   semicon,

@@ -32,6 +32,10 @@ const BlogPageClient  = () => {
 
   const blogHeadlines = [
     {
+  slug: "how-local-businesses-in-malappuram-can-get-leads-through-digital-marketing",
+  title: "How Local Businesses in Malappuram Can Get Leads Through Digital Marketing",
+    },
+    {
       title:
         "Why Every Small Business in Malappuram Needs a Digital Marketing Expert",
       slug: "why-every-small-business-in-malappuram-needs-a-digital-marketing-expert",
