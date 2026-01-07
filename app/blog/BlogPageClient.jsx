@@ -60,7 +60,7 @@ const BlogPageClient  = () => {
       <Navbar isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
       {/* Blog content can be added here */}
       <div className="min-h-[100vh] flex flex-col items-center justify-center px-4 py-8 w-full">
-        <h1 className="text-4xl font-bold mb-8 mt-12">Blogs</h1>
+        <h1 className="text-4xl font-bold mb-8 mt-20">Blogs</h1>
         <ul className="space-y-6 w-full max-w-3xl">
           {blogHeadlines.map(({ title, slug }, index) => (
             <li key={index} className="border-b pb-4">

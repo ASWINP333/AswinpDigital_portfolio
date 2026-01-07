@@ -21,7 +21,9 @@ export const metadata = {
     default: "Digital Marketing Expert in Malappuram — Aswin P",
     template: "%s | Aswin P",
   },
-
+  icons:{
+    icon: "/favicon.ico",
+  },
   description:
     "Digital marketing expert in Malappuram offering SEO, social media, PPC and web development services.",
 
