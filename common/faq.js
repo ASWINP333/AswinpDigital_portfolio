@@ -8,7 +8,7 @@ export const faqs = [
     a: `A focused local strategy includes Google Business Profile optimization, local keyword research (e.g., "best shop in Malappuram"), citation building and review management. These actions help your business appear in the local pack and on Google Maps, driving high-intent, nearby customers.`,
   },
   {
-    q: "Can a Digital Marketing Expert in Malappuram help with website conversions and lead generation?",
+    q: "Can you help improve website conversions and lead generation?",
     a: `Yes — by building SEO-friendly landing pages, optimizing calls-to-action, improving page speed and running conversion-focused ad campaigns, a Digital Marketing Expert in Malappuram turns website visitors into real leads and customers.`,
   },
   {
@@ -20,20 +20,16 @@ export const faqs = [
     a: `Some tactics (like Meta Ads) produce immediate traffic and leads, while SEO and organic growth typically show consistent improvements in 2–4 months. A Digital Marketing Expert in Malappuram will combine short-term ads with long-term SEO for balanced growth.`,
   },
   {
-    q: "Do you provide reporting and analytics when hiring a Digital Marketing Expert in Malappuram?",
+    q: "Do you provide reporting and performance insights?",
     a: `Yes. Regular performance reports (Google Analytics / Search Console / Ads) show traffic, leads, conversions and ROI. As a Digital Marketing Expert in Malappuram I focus on measurable KPIs and transparent reporting so you always know how your campaigns perform.`,
   },
   {
-    q: "Will a Digital Marketing Expert in Malappuram help with content and social media creation?",
+    q: "Do you help with content and social media management?",
     a: `Absolutely. Localised content (Malayalam + English), short-form videos, reels and customer testimonials are part of the strategy. Content tailored to Malappuram audiences drives trust and higher engagement.`,
   },
   {
     q: "How do I get started with a Digital Marketing Expert in Malappuram?",
     a: `Start with a free consultation — we’ll audit your website, Google Business Profile and social presence, then propose a simple 90-day plan focused on quick wins (local SEO, one high-converting landing page, and a small ad test). Contact me via the contact form or email to begin.`,
-  },
-  {
-    q:"How long does SEO take for local businesses in Malappuram?",
-    a:"SEO results for local businesses in Malappuram usually start appearing within 4 to 8 weeks, depending on competition and website quality. As a digital marketing expert in Malappuram, I focus on local SEO strategies that improve Google rankings, visibility, and lead generation in a sustainable way."
   },
   {
     q:"Do you offer digital marketing services for small businesses?",
